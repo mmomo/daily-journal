@@ -9,19 +9,20 @@ struct BundledPromptLibraryTests {
     @Test func bundledLibraryLoadsAndIsValid() throws {
         let library = try BundledPromptLibrary()
         let prompts = library.allPrompts()
-        #expect(prompts.count == 368)
+        #expect(prompts.count == 600)
         for category in PromptCategory.allCases {
-            #expect(prompts.filter { $0.category == category }.count == 92)
+            #expect(prompts.filter { $0.category == category }.count == 150)
         }
         #expect(library.prompt(id: "gratitude-001")?.text == "What small thing made today better?")
+        #expect(library.prompt(id: "creativity-150") != nil)
         #expect(library.prompt(id: "missing-001") == nil)
     }
 
     @Test func bundledLibraryGivesNoRepeatsForEveryCategoryAlone() throws {
         let selector = PromptSelector(library: try BundledPromptLibrary().allPrompts())
         for category in PromptCategory.allCases {
-            let ids = (0..<92).map { selector.dailyPrompt(for: day("2026-01-01").adding(days: $0), categories: [category]).id }
-            #expect(Set(ids).count == 92)
+            let ids = (0..<150).map { selector.dailyPrompt(for: day("2026-01-01").adding(days: $0), categories: [category]).id }
+            #expect(Set(ids).count == 150)
         }
     }
 

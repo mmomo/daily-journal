@@ -335,3 +335,10 @@
 **Context**: Post-completion UI polish - App unit
 
 ---
+## Prompt Library Expansion
+**Timestamp**: 2026-10-29T19:29:50Z
+**User Input**: "Lets add more prompts. Please add more prompts in all categories, make sure all prompts are appropriate and safe."
+**AI Response**: "Minimal-depth content change within Data unit. Added 58 prompts per category (ids 093-150) to JournalCore/Sources/JournalData/Resources/prompts.json: 368 -> 600 total, 150 per category. Prompts written to be gentle and inclusive (no trauma, grief, body/weight, diet, money pressure, politics or religion; no assumed partner, family, pets or abilities). Pre-write validation: 10-200 characters, unique text, and a similarity check against all existing prompts (8 rephrased). Updated StoreTests counts (600/150, 150-day no-repeat window) and JournalCore README. swift test: 122/122 tests in 23 suites passed, including BundledPromptLibrary validation."
+**Context**: Post-completion content change - Data unit
+
+---

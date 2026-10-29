@@ -5,7 +5,7 @@ Shared Swift package for the Daily Journal app (iOS 17+).
 | Target | Layer | Contents |
 |---|---|---|
 | `JournalDomain` | Domain | Entities, business-rule policies, ports (protocols) and the 15 use cases. Foundation only |
-| `JournalData` | Data | SwiftData/CloudKit repository, App Group stores, notification scheduler, widget refresher, bundled `prompts.json` (368 prompts), and the `JournalEnvironmentFactory` composition root |
+| `JournalData` | Data | SwiftData/CloudKit repository, App Group stores, notification scheduler, widget refresher, bundled `prompts.json` (600 prompts), and the `JournalEnvironmentFactory` composition root |
 
 ## Running the tests
 
