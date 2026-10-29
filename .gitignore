@@ -1,0 +1,13 @@
+# SwiftPM
+.build/
+.swiftpm/
+
+# Tuist / Xcode (generated)
+*.xcodeproj
+*.xcworkspace
+Derived/
+xcuserdata/
+DerivedData/
+
+# macOS
+.DS_Store

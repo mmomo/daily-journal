@@ -1,0 +1,1845 @@
+{
+  "version": 1,
+  "prompts": [
+    {
+      "id": "gratitude-001",
+      "category": "gratitude",
+      "text": "What small thing made today better?"
+    },
+    {
+      "id": "gratitude-002",
+      "category": "gratitude",
+      "text": "Who is someone you're grateful for right now, and why?"
+    },
+    {
+      "id": "gratitude-003",
+      "category": "gratitude",
+      "text": "What is a simple comfort you often take for granted?"
+    },
+    {
+      "id": "gratitude-004",
+      "category": "gratitude",
+      "text": "Describe a moment today when you felt at ease."
+    },
+    {
+      "id": "gratitude-005",
+      "category": "gratitude",
+      "text": "What is something your body allowed you to do today?"
+    },
+    {
+      "id": "gratitude-006",
+      "category": "gratitude",
+      "text": "Which meal or drink recently brought you real enjoyment?"
+    },
+    {
+      "id": "gratitude-007",
+      "category": "gratitude",
+      "text": "Who made you laugh lately, and what happened?"
+    },
+    {
+      "id": "gratitude-008",
+      "category": "gratitude",
+      "text": "What is a place that always makes you feel safe?"
+    },
+    {
+      "id": "gratitude-009",
+      "category": "gratitude",
+      "text": "What skill are you thankful to have learned?"
+    },
+    {
+      "id": "gratitude-010",
+      "category": "gratitude",
+      "text": "Name a challenge that ended up teaching you something valuable."
+    },
+    {
+      "id": "gratitude-011",
+      "category": "gratitude",
+      "text": "What is something in nature you noticed and appreciated recently?"
+    },
+    {
+      "id": "gratitude-012",
+      "category": "gratitude",
+      "text": "Which piece of technology makes your life noticeably easier?"
+    },
+    {
+      "id": "gratitude-013",
+      "category": "gratitude",
+      "text": "Who helped you without being asked? How did it feel?"
+    },
+    {
+      "id": "gratitude-014",
+      "category": "gratitude",
+      "text": "What is a song that lifts your mood every time?"
+    },
+    {
+      "id": "gratitude-015",
+      "category": "gratitude",
+      "text": "What is one thing about your home you appreciate?"
+    },
+    {
+      "id": "gratitude-016",
+      "category": "gratitude",
+      "text": "What opportunity are you grateful to have had?"
+    },
+    {
+      "id": "gratitude-017",
+      "category": "gratitude",
+      "text": "Recall a kind word someone said to you. What was it?"
+    },
+    {
+      "id": "gratitude-018",
+      "category": "gratitude",
+      "text": "What is a small luxury you enjoyed this week?"
+    },
+    {
+      "id": "gratitude-019",
+      "category": "gratitude",
+      "text": "Which friend has stuck with you the longest, and what do you value in them?"
+    },
+    {
+      "id": "gratitude-020",
+      "category": "gratitude",
+      "text": "What is something you're looking forward to?"
+    },
+    {
+      "id": "gratitude-021",
+      "category": "gratitude",
+      "text": "What part of your daily routine do you secretly love?"
+    },
+    {
+      "id": "gratitude-022",
+      "category": "gratitude",
+      "text": "Which book, show, or film are you glad you found?"
+    },
+    {
+      "id": "gratitude-023",
+      "category": "gratitude",
+      "text": "What is a mistake you're grateful you made?"
+    },
+    {
+      "id": "gratitude-024",
+      "category": "gratitude",
+      "text": "Who is a teacher or mentor you still think about?"
+    },
+    {
+      "id": "gratitude-025",
+      "category": "gratitude",
+      "text": "What is something about today's weather you can appreciate?"
+    },
+    {
+      "id": "gratitude-026",
+      "category": "gratitude",
+      "text": "What is a freedom you have that others might not?"
+    },
+    {
+      "id": "gratitude-027",
+      "category": "gratitude",
+      "text": "What made you smile on your way somewhere recently?"
+    },
+    {
+      "id": "gratitude-028",
+      "category": "gratitude",
+      "text": "Which family memory are you most thankful for?"
+    },
+    {
+      "id": "gratitude-029",
+      "category": "gratitude",
+      "text": "What is an everyday object you'd miss if it disappeared?"
+    },
+    {
+      "id": "gratitude-030",
+      "category": "gratitude",
+      "text": "What is something you own that has a story behind it?"
+    },
+    {
+      "id": "gratitude-031",
+      "category": "gratitude",
+      "text": "Who believed in you before you believed in yourself?"
+    },
+    {
+      "id": "gratitude-032",
+      "category": "gratitude",
+      "text": "What is a quiet moment from this week you want to remember?"
+    },
+    {
+      "id": "gratitude-033",
+      "category": "gratitude",
+      "text": "What is something you did for yourself recently that you appreciate?"
+    },
+    {
+      "id": "gratitude-034",
+      "category": "gratitude",
+      "text": "Which smell instantly brings back a happy memory?"
+    },
+    {
+      "id": "gratitude-035",
+      "category": "gratitude",
+      "text": "What is a recent conversation that left you feeling lighter?"
+    },
+    {
+      "id": "gratitude-036",
+      "category": "gratitude",
+      "text": "What is something about your work or studies you're thankful for?"
+    },
+    {
+      "id": "gratitude-037",
+      "category": "gratitude",
+      "text": "What is a stranger's kindness you still remember?"
+    },
+    {
+      "id": "gratitude-038",
+      "category": "gratitude",
+      "text": "Which season do you love most, and what do you appreciate about it?"
+    },
+    {
+      "id": "gratitude-039",
+      "category": "gratitude",
+      "text": "What is a lesson from a past relationship you're grateful for?"
+    },
+    {
+      "id": "gratitude-040",
+      "category": "gratitude",
+      "text": "What is something you can see from where you are that you appreciate?"
+    },
+    {
+      "id": "gratitude-041",
+      "category": "gratitude",
+      "text": "Who would you like to thank but haven't yet?"
+    },
+    {
+      "id": "gratitude-042",
+      "category": "gratitude",
+      "text": "What is a tradition you're glad to be part of?"
+    },
+    {
+      "id": "gratitude-043",
+      "category": "gratitude",
+      "text": "What is a piece of advice that turned out to be right?"
+    },
+    {
+      "id": "gratitude-044",
+      "category": "gratitude",
+      "text": "What is one thing that went better than expected recently?"
+    },
+    {
+      "id": "gratitude-045",
+      "category": "gratitude",
+      "text": "Which animal or pet has brought joy into your life?"
+    },
+    {
+      "id": "gratitude-046",
+      "category": "gratitude",
+      "text": "What is an ability of your mind you're thankful for?"
+    },
+    {
+      "id": "gratitude-047",
+      "category": "gratitude",
+      "text": "What is a hard day you're glad is behind you?"
+    },
+    {
+      "id": "gratitude-048",
+      "category": "gratitude",
+      "text": "What is a small win from this week?"
+    },
+    {
+      "id": "gratitude-049",
+      "category": "gratitude",
+      "text": "What is something you have now that you once wished for?"
+    },
+    {
+      "id": "gratitude-050",
+      "category": "gratitude",
+      "text": "Who in your community makes life better for others?"
+    },
+    {
+      "id": "gratitude-051",
+      "category": "gratitude",
+      "text": "What is a comfort food, and what memory is attached to it?"
+    },
+    {
+      "id": "gratitude-052",
+      "category": "gratitude",
+      "text": "Which of your senses did you enjoy most today?"
+    },
+    {
+      "id": "gratitude-053",
+      "category": "gratitude",
+      "text": "What is a place you've traveled that you're grateful to have seen?"
+    },
+    {
+      "id": "gratitude-054",
+      "category": "gratitude",
+      "text": "What is a habit that has quietly improved your life?"
+    },
+    {
+      "id": "gratitude-055",
+      "category": "gratitude",
+      "text": "What is something about your neighborhood you appreciate?"
+    },
+    {
+      "id": "gratitude-056",
+      "category": "gratitude",
+      "text": "Who has forgiven you, and what did that mean to you?"
+    },
+    {
+      "id": "gratitude-057",
+      "category": "gratitude",
+      "text": "What is a recent moment of beauty you witnessed?"
+    },
+    {
+      "id": "gratitude-058",
+      "category": "gratitude",
+      "text": "What are you grateful for about this exact moment?"
+    },
+    {
+      "id": "gratitude-059",
+      "category": "gratitude",
+      "text": "What is a problem you don't have that you're thankful for?"
+    },
+    {
+      "id": "gratitude-060",
+      "category": "gratitude",
+      "text": "What is a gift you received that meant more than its price?"
+    },
+    {
+      "id": "gratitude-061",
+      "category": "gratitude",
+      "text": "What is something you learned from a child or younger person?"
+    },
+    {
+      "id": "gratitude-062",
+      "category": "gratitude",
+      "text": "Which of your personality traits are you grateful for?"
+    },
+    {
+      "id": "gratitude-063",
+      "category": "gratitude",
+      "text": "What is a resource or service you rely on and appreciate?"
+    },
+    {
+      "id": "gratitude-064",
+      "category": "gratitude",
+      "text": "What is something you're grateful your past self did?"
+    },
+    {
+      "id": "gratitude-065",
+      "category": "gratitude",
+      "text": "Who checked in on you recently, and how did it feel?"
+    },
+    {
+      "id": "gratitude-066",
+      "category": "gratitude",
+      "text": "What is a view, sound, or texture you enjoyed today?"
+    },
+    {
+      "id": "gratitude-067",
+      "category": "gratitude",
+      "text": "What is a recent act of patience you appreciated, from you or someone else?"
+    },
+    {
+      "id": "gratitude-068",
+      "category": "gratitude",
+      "text": "What made today different from an ordinary day?"
+    },
+    {
+      "id": "gratitude-069",
+      "category": "gratitude",
+      "text": "What is a moment of rest you're thankful for?"
+    },
+    {
+      "id": "gratitude-070",
+      "category": "gratitude",
+      "text": "What is a memory with a grandparent or elder you treasure?"
+    },
+    {
+      "id": "gratitude-071",
+      "category": "gratitude",
+      "text": "What is something that made you feel capable this week?"
+    },
+    {
+      "id": "gratitude-072",
+      "category": "gratitude",
+      "text": "What is a small kindness you were able to give?"
+    },
+    {
+      "id": "gratitude-073",
+      "category": "gratitude",
+      "text": "Which of today's ordinary tasks went smoothly?"
+    },
+    {
+      "id": "gratitude-074",
+      "category": "gratitude",
+      "text": "What is a piece of art that moved you?"
+    },
+    {
+      "id": "gratitude-075",
+      "category": "gratitude",
+      "text": "What is something about your health you can appreciate today?"
+    },
+    {
+      "id": "gratitude-076",
+      "category": "gratitude",
+      "text": "Who taught you how to do something you still do?"
+    },
+    {
+      "id": "gratitude-077",
+      "category": "gratitude",
+      "text": "What is an unexpected good thing that happened recently?"
+    },
+    {
+      "id": "gratitude-078",
+      "category": "gratitude",
+      "text": "What is a place in your home where you feel most yourself?"
+    },
+    {
+      "id": "gratitude-079",
+      "category": "gratitude",
+      "text": "What would you miss most about this year if it ended today?"
+    },
+    {
+      "id": "gratitude-080",
+      "category": "gratitude",
+      "text": "What is a friendship that grew stronger over time?"
+    },
+    {
+      "id": "gratitude-081",
+      "category": "gratitude",
+      "text": "What is a second chance you were given?"
+    },
+    {
+      "id": "gratitude-082",
+      "category": "gratitude",
+      "text": "What is something funny you remember from this month?"
+    },
+    {
+      "id": "gratitude-083",
+      "category": "gratitude",
+      "text": "Which person makes you feel understood?"
+    },
+    {
+      "id": "gratitude-084",
+      "category": "gratitude",
+      "text": "What is a challenge you're facing that is also helping you grow?"
+    },
+    {
+      "id": "gratitude-085",
+      "category": "gratitude",
+      "text": "What is a simple pleasure you could enjoy again tomorrow?"
+    },
+    {
+      "id": "gratitude-086",
+      "category": "gratitude",
+      "text": "What are three things you're grateful for in this moment?"
+    },
+    {
+      "id": "gratitude-087",
+      "category": "gratitude",
+      "text": "What is an old photo that makes you happy?"
+    },
+    {
+      "id": "gratitude-088",
+      "category": "gratitude",
+      "text": "What is a way someone showed they care about you?"
+    },
+    {
+      "id": "gratitude-089",
+      "category": "gratitude",
+      "text": "What is a skill someone shared with you freely?"
+    },
+    {
+      "id": "gratitude-090",
+      "category": "gratitude",
+      "text": "What is a calm moment you found in a busy day?"
+    },
+    {
+      "id": "gratitude-091",
+      "category": "gratitude",
+      "text": "What do you appreciate about the people you live with or near?"
+    },
+    {
+      "id": "gratitude-092",
+      "category": "gratitude",
+      "text": "What is a reason you're glad you got out of bed today?"
+    },
+    {
+      "id": "reflection-001",
+      "category": "reflection",
+      "text": "What has been on your mind the most today?"
+    },
+    {
+      "id": "reflection-002",
+      "category": "reflection",
+      "text": "How are you really feeling right now?"
+    },
+    {
+      "id": "reflection-003",
+      "category": "reflection",
+      "text": "What drained your energy today, and what restored it?"
+    },
+    {
+      "id": "reflection-004",
+      "category": "reflection",
+      "text": "What is a belief you held a year ago that has changed?"
+    },
+    {
+      "id": "reflection-005",
+      "category": "reflection",
+      "text": "When did you feel most like yourself this week?"
+    },
+    {
+      "id": "reflection-006",
+      "category": "reflection",
+      "text": "What is something you've been avoiding thinking about?"
+    },
+    {
+      "id": "reflection-007",
+      "category": "reflection",
+      "text": "What would you tell your younger self about today?"
+    },
+    {
+      "id": "reflection-008",
+      "category": "reflection",
+      "text": "What emotion showed up most often this week?"
+    },
+    {
+      "id": "reflection-009",
+      "category": "reflection",
+      "text": "What is a decision you're unsure about, and why?"
+    },
+    {
+      "id": "reflection-010",
+      "category": "reflection",
+      "text": "What did you learn about yourself recently?"
+    },
+    {
+      "id": "reflection-011",
+      "category": "reflection",
+      "text": "What is something you said today that you'd like to say differently?"
+    },
+    {
+      "id": "reflection-012",
+      "category": "reflection",
+      "text": "Where did your attention go today?"
+    },
+    {
+      "id": "reflection-013",
+      "category": "reflection",
+      "text": "What is a pattern in your life you've started to notice?"
+    },
+    {
+      "id": "reflection-014",
+      "category": "reflection",
+      "text": "What does a good day look like for you right now?"
+    },
+    {
+      "id": "reflection-015",
+      "category": "reflection",
+      "text": "What are you holding onto that you could let go of?"
+    },
+    {
+      "id": "reflection-016",
+      "category": "reflection",
+      "text": "What is a question you keep coming back to?"
+    },
+    {
+      "id": "reflection-017",
+      "category": "reflection",
+      "text": "How did you take care of yourself today?"
+    },
+    {
+      "id": "reflection-018",
+      "category": "reflection",
+      "text": "What surprised you about your own reaction to something recently?"
+    },
+    {
+      "id": "reflection-019",
+      "category": "reflection",
+      "text": "What do you need more of in your life right now?"
+    },
+    {
+      "id": "reflection-020",
+      "category": "reflection",
+      "text": "What do you need less of in your life right now?"
+    },
+    {
+      "id": "reflection-021",
+      "category": "reflection",
+      "text": "What is a conversation you keep replaying in your head?"
+    },
+    {
+      "id": "reflection-022",
+      "category": "reflection",
+      "text": "When did you last feel truly at peace?"
+    },
+    {
+      "id": "reflection-023",
+      "category": "reflection",
+      "text": "What is something you're proud of that nobody knows about?"
+    },
+    {
+      "id": "reflection-024",
+      "category": "reflection",
+      "text": "What is a fear that has been quietly guiding your choices?"
+    },
+    {
+      "id": "reflection-025",
+      "category": "reflection",
+      "text": "What would you do differently if you could replay today?"
+    },
+    {
+      "id": "reflection-026",
+      "category": "reflection",
+      "text": "What is a value you lived by today?"
+    },
+    {
+      "id": "reflection-027",
+      "category": "reflection",
+      "text": "What part of your day felt meaningful?"
+    },
+    {
+      "id": "reflection-028",
+      "category": "reflection",
+      "text": "How have you changed in the last five years?"
+    },
+    {
+      "id": "reflection-029",
+      "category": "reflection",
+      "text": "What is something you're curious about in your own life?"
+    },
+    {
+      "id": "reflection-030",
+      "category": "reflection",
+      "text": "What is a boundary you set, or wish you had set?"
+    },
+    {
+      "id": "reflection-031",
+      "category": "reflection",
+      "text": "What is a compliment you struggle to accept, and why?"
+    },
+    {
+      "id": "reflection-032",
+      "category": "reflection",
+      "text": "What does rest mean to you right now?"
+    },
+    {
+      "id": "reflection-033",
+      "category": "reflection",
+      "text": "What story are you telling yourself about a current situation?"
+    },
+    {
+      "id": "reflection-034",
+      "category": "reflection",
+      "text": "What made you feel stressed today, and how did you respond?"
+    },
+    {
+      "id": "reflection-035",
+      "category": "reflection",
+      "text": "What is a relationship you'd like to understand better?"
+    },
+    {
+      "id": "reflection-036",
+      "category": "reflection",
+      "text": "What is something you've outgrown?"
+    },
+    {
+      "id": "reflection-037",
+      "category": "reflection",
+      "text": "What did today teach you about patience?"
+    },
+    {
+      "id": "reflection-038",
+      "category": "reflection",
+      "text": "Where in your life do you feel stuck, and what might help?"
+    },
+    {
+      "id": "reflection-039",
+      "category": "reflection",
+      "text": "What is a habit you'd like to understand rather than judge?"
+    },
+    {
+      "id": "reflection-040",
+      "category": "reflection",
+      "text": "What do you wish people knew about you?"
+    },
+    {
+      "id": "reflection-041",
+      "category": "reflection",
+      "text": "How do you usually handle disappointment?"
+    },
+    {
+      "id": "reflection-042",
+      "category": "reflection",
+      "text": "What is a recent moment when you felt brave?"
+    },
+    {
+      "id": "reflection-043",
+      "category": "reflection",
+      "text": "What would make tomorrow feel a little lighter?"
+    },
+    {
+      "id": "reflection-044",
+      "category": "reflection",
+      "text": "What is something you've been too hard on yourself about?"
+    },
+    {
+      "id": "reflection-045",
+      "category": "reflection",
+      "text": "Which of your needs went unmet today?"
+    },
+    {
+      "id": "reflection-046",
+      "category": "reflection",
+      "text": "What role do you tend to play in groups, and do you like it?"
+    },
+    {
+      "id": "reflection-047",
+      "category": "reflection",
+      "text": "What is a memory that shaped who you are?"
+    },
+    {
+      "id": "reflection-048",
+      "category": "reflection",
+      "text": "What does success mean to you this month?"
+    },
+    {
+      "id": "reflection-049",
+      "category": "reflection",
+      "text": "What is something you changed your mind about recently?"
+    },
+    {
+      "id": "reflection-050",
+      "category": "reflection",
+      "text": "How do you know when you need a break?"
+    },
+    {
+      "id": "reflection-051",
+      "category": "reflection",
+      "text": "What is an assumption you made today that turned out wrong?"
+    },
+    {
+      "id": "reflection-052",
+      "category": "reflection",
+      "text": "What gave you a sense of purpose this week?"
+    },
+    {
+      "id": "reflection-053",
+      "category": "reflection",
+      "text": "What is a feeling you'd like to sit with instead of rushing past?"
+    },
+    {
+      "id": "reflection-054",
+      "category": "reflection",
+      "text": "What is the kindest thing you did for yourself lately?"
+    },
+    {
+      "id": "reflection-055",
+      "category": "reflection",
+      "text": "When did you last ask for help, and how did it go?"
+    },
+    {
+      "id": "reflection-056",
+      "category": "reflection",
+      "text": "What is a small regret you can learn from?"
+    },
+    {
+      "id": "reflection-057",
+      "category": "reflection",
+      "text": "What would your ideal ordinary Tuesday look like?"
+    },
+    {
+      "id": "reflection-058",
+      "category": "reflection",
+      "text": "How did you spend your free time this week, and did it feel good?"
+    },
+    {
+      "id": "reflection-059",
+      "category": "reflection",
+      "text": "What is something you understand now that you didn't before?"
+    },
+    {
+      "id": "reflection-060",
+      "category": "reflection",
+      "text": "What is weighing on you that you could write down and set aside?"
+    },
+    {
+      "id": "reflection-061",
+      "category": "reflection",
+      "text": "What do you admire in others that you'd like to grow in yourself?"
+    },
+    {
+      "id": "reflection-062",
+      "category": "reflection",
+      "text": "What is a moment today when you were fully present?"
+    },
+    {
+      "id": "reflection-063",
+      "category": "reflection",
+      "text": "What is a lesson you keep having to relearn?"
+    },
+    {
+      "id": "reflection-064",
+      "category": "reflection",
+      "text": "How do you show love to the people around you?"
+    },
+    {
+      "id": "reflection-065",
+      "category": "reflection",
+      "text": "What is a recent choice that reflected who you want to be?"
+    },
+    {
+      "id": "reflection-066",
+      "category": "reflection",
+      "text": "What makes you feel misunderstood?"
+    },
+    {
+      "id": "reflection-067",
+      "category": "reflection",
+      "text": "What is a quiet hope you haven't said out loud?"
+    },
+    {
+      "id": "reflection-068",
+      "category": "reflection",
+      "text": "What part of your past are you making peace with?"
+    },
+    {
+      "id": "reflection-069",
+      "category": "reflection",
+      "text": "How did your mood change over the course of today?"
+    },
+    {
+      "id": "reflection-070",
+      "category": "reflection",
+      "text": "What would it look like to be a little gentler with yourself this week?"
+    },
+    {
+      "id": "reflection-071",
+      "category": "reflection",
+      "text": "What is a topic you could talk about for hours, and why?"
+    },
+    {
+      "id": "reflection-072",
+      "category": "reflection",
+      "text": "What does home mean to you?"
+    },
+    {
+      "id": "reflection-073",
+      "category": "reflection",
+      "text": "What is a habit of thought you'd like to change?"
+    },
+    {
+      "id": "reflection-074",
+      "category": "reflection",
+      "text": "What did you notice today that you usually overlook?"
+    },
+    {
+      "id": "reflection-075",
+      "category": "reflection",
+      "text": "What do you want to remember about this season of your life?"
+    },
+    {
+      "id": "reflection-076",
+      "category": "reflection",
+      "text": "What is a difficult feeling that taught you something?"
+    },
+    {
+      "id": "reflection-077",
+      "category": "reflection",
+      "text": "What is something you're waiting for, and how does waiting feel?"
+    },
+    {
+      "id": "reflection-078",
+      "category": "reflection",
+      "text": "When did you feel connected to someone today?"
+    },
+    {
+      "id": "reflection-079",
+      "category": "reflection",
+      "text": "What are you tolerating that you don't have to?"
+    },
+    {
+      "id": "reflection-080",
+      "category": "reflection",
+      "text": "What is the most honest sentence you could write right now?"
+    },
+    {
+      "id": "reflection-081",
+      "category": "reflection",
+      "text": "What expectations are you carrying that aren't really yours?"
+    },
+    {
+      "id": "reflection-082",
+      "category": "reflection",
+      "text": "What would you do today if you weren't afraid of judgment?"
+    },
+    {
+      "id": "reflection-083",
+      "category": "reflection",
+      "text": "What did you give your energy to today, and was it worth it?"
+    },
+    {
+      "id": "reflection-084",
+      "category": "reflection",
+      "text": "How do you recharge best: alone, with others, or something else?"
+    },
+    {
+      "id": "reflection-085",
+      "category": "reflection",
+      "text": "What is a recent moment that made you rethink a priority?"
+    },
+    {
+      "id": "reflection-086",
+      "category": "reflection",
+      "text": "What is one thing you'd like to forgive yourself for?"
+    },
+    {
+      "id": "reflection-087",
+      "category": "reflection",
+      "text": "What part of your life feels most in balance right now?"
+    },
+    {
+      "id": "reflection-088",
+      "category": "reflection",
+      "text": "What part of your life feels out of balance right now?"
+    },
+    {
+      "id": "reflection-089",
+      "category": "reflection",
+      "text": "What is a phrase or idea that's been stuck in your head?"
+    },
+    {
+      "id": "reflection-090",
+      "category": "reflection",
+      "text": "How did you handle uncertainty today?"
+    },
+    {
+      "id": "reflection-091",
+      "category": "reflection",
+      "text": "What is something you're learning to accept?"
+    },
+    {
+      "id": "reflection-092",
+      "category": "reflection",
+      "text": "If today were a chapter in a book, what would its title be?"
+    },
+    {
+      "id": "goals-001",
+      "category": "goals",
+      "text": "What is one thing you want to accomplish this week?"
+    },
+    {
+      "id": "goals-002",
+      "category": "goals",
+      "text": "What is a small step you can take tomorrow toward a bigger goal?"
+    },
+    {
+      "id": "goals-003",
+      "category": "goals",
+      "text": "What would make this month feel successful?"
+    },
+    {
+      "id": "goals-004",
+      "category": "goals",
+      "text": "What habit would you like to build, and why does it matter to you?"
+    },
+    {
+      "id": "goals-005",
+      "category": "goals",
+      "text": "What is a goal you've been putting off, and what's in the way?"
+    },
+    {
+      "id": "goals-006",
+      "category": "goals",
+      "text": "Where do you want to be one year from today?"
+    },
+    {
+      "id": "goals-007",
+      "category": "goals",
+      "text": "What is one skill you'd like to get better at this season?"
+    },
+    {
+      "id": "goals-008",
+      "category": "goals",
+      "text": "What does progress look like for you right now?"
+    },
+    {
+      "id": "goals-009",
+      "category": "goals",
+      "text": "What is a goal you achieved that you once thought was impossible?"
+    },
+    {
+      "id": "goals-010",
+      "category": "goals",
+      "text": "What are three priorities for tomorrow?"
+    },
+    {
+      "id": "goals-011",
+      "category": "goals",
+      "text": "What is one thing you could stop doing to free up time?"
+    },
+    {
+      "id": "goals-012",
+      "category": "goals",
+      "text": "Who could help you reach a goal you care about?"
+    },
+    {
+      "id": "goals-013",
+      "category": "goals",
+      "text": "What is a goal that excites you and scares you a little?"
+    },
+    {
+      "id": "goals-014",
+      "category": "goals",
+      "text": "How will you celebrate your next milestone?"
+    },
+    {
+      "id": "goals-015",
+      "category": "goals",
+      "text": "What is the next tiny action on your most important project?"
+    },
+    {
+      "id": "goals-016",
+      "category": "goals",
+      "text": "What would you attempt if you knew you couldn't fail?"
+    },
+    {
+      "id": "goals-017",
+      "category": "goals",
+      "text": "What is a health goal that would make daily life easier?"
+    },
+    {
+      "id": "goals-018",
+      "category": "goals",
+      "text": "What is a financial goal you'd like to work toward?"
+    },
+    {
+      "id": "goals-019",
+      "category": "goals",
+      "text": "What is a relationship you'd like to invest more time in?"
+    },
+    {
+      "id": "goals-020",
+      "category": "goals",
+      "text": "What does your ideal morning routine look like?"
+    },
+    {
+      "id": "goals-021",
+      "category": "goals",
+      "text": "What did you make progress on today, even a little?"
+    },
+    {
+      "id": "goals-022",
+      "category": "goals",
+      "text": "What obstacle could you plan for in advance this week?"
+    },
+    {
+      "id": "goals-023",
+      "category": "goals",
+      "text": "What is a goal that no longer fits you and could be released?"
+    },
+    {
+      "id": "goals-024",
+      "category": "goals",
+      "text": "What would you like to learn before the end of the year?"
+    },
+    {
+      "id": "goals-025",
+      "category": "goals",
+      "text": "How can you make your most important task easier to start?"
+    },
+    {
+      "id": "goals-026",
+      "category": "goals",
+      "text": "What is a commitment you made to yourself recently, and how is it going?"
+    },
+    {
+      "id": "goals-027",
+      "category": "goals",
+      "text": "What does a balanced week look like for you?"
+    },
+    {
+      "id": "goals-028",
+      "category": "goals",
+      "text": "What is one boundary that would help you focus on what matters?"
+    },
+    {
+      "id": "goals-029",
+      "category": "goals",
+      "text": "What would you like to finish that you started long ago?"
+    },
+    {
+      "id": "goals-030",
+      "category": "goals",
+      "text": "What is a goal you'd like to share with someone for accountability?"
+    },
+    {
+      "id": "goals-031",
+      "category": "goals",
+      "text": "What is one thing you could do this week to feel more rested?"
+    },
+    {
+      "id": "goals-032",
+      "category": "goals",
+      "text": "What would make tomorrow a good day?"
+    },
+    {
+      "id": "goals-033",
+      "category": "goals",
+      "text": "What is a creative project you'd like to begin?"
+    },
+    {
+      "id": "goals-034",
+      "category": "goals",
+      "text": "What part of your work would you like to improve?"
+    },
+    {
+      "id": "goals-035",
+      "category": "goals",
+      "text": "What is a place you'd like to visit, and what would it take to go?"
+    },
+    {
+      "id": "goals-036",
+      "category": "goals",
+      "text": "What would your future self thank you for starting today?"
+    },
+    {
+      "id": "goals-037",
+      "category": "goals",
+      "text": "What is a distraction you'd like to reduce?"
+    },
+    {
+      "id": "goals-038",
+      "category": "goals",
+      "text": "What did you learn from a goal that didn't work out?"
+    },
+    {
+      "id": "goals-039",
+      "category": "goals",
+      "text": "What is one thing you could do to make your space more supportive?"
+    },
+    {
+      "id": "goals-040",
+      "category": "goals",
+      "text": "What is a reading or learning goal for this month?"
+    },
+    {
+      "id": "goals-041",
+      "category": "goals",
+      "text": "Which goal matters most to you right now, and why that one?"
+    },
+    {
+      "id": "goals-042",
+      "category": "goals",
+      "text": "What is a habit you've kept for a while, and what helped it stick?"
+    },
+    {
+      "id": "goals-043",
+      "category": "goals",
+      "text": "What would you like more of in your relationships this year?"
+    },
+    {
+      "id": "goals-044",
+      "category": "goals",
+      "text": "What is a goal you can measure, and how will you track it?"
+    },
+    {
+      "id": "goals-045",
+      "category": "goals",
+      "text": "How would you like to spend your next free weekend?"
+    },
+    {
+      "id": "goals-046",
+      "category": "goals",
+      "text": "What is something you'd like to say yes to more often?"
+    },
+    {
+      "id": "goals-047",
+      "category": "goals",
+      "text": "What is something you'd like to say no to more often?"
+    },
+    {
+      "id": "goals-048",
+      "category": "goals",
+      "text": "What is one way to make progress on your goals feel more fun?"
+    },
+    {
+      "id": "goals-049",
+      "category": "goals",
+      "text": "What is a deadline coming up, and how do you feel about it?"
+    },
+    {
+      "id": "goals-050",
+      "category": "goals",
+      "text": "What resources do you already have that could help you?"
+    },
+    {
+      "id": "goals-051",
+      "category": "goals",
+      "text": "What would you like to be known for?"
+    },
+    {
+      "id": "goals-052",
+      "category": "goals",
+      "text": "What is a fitness or movement goal that feels realistic?"
+    },
+    {
+      "id": "goals-053",
+      "category": "goals",
+      "text": "What is one decision you could make today to simplify your life?"
+    },
+    {
+      "id": "goals-054",
+      "category": "goals",
+      "text": "What would you like to do for someone else this month?"
+    },
+    {
+      "id": "goals-055",
+      "category": "goals",
+      "text": "What did you accomplish this week that deserves recognition?"
+    },
+    {
+      "id": "goals-056",
+      "category": "goals",
+      "text": "What does \"enough\" look like for you in your current goals?"
+    },
+    {
+      "id": "goals-057",
+      "category": "goals",
+      "text": "What is a goal you'd pursue purely for enjoyment?"
+    },
+    {
+      "id": "goals-058",
+      "category": "goals",
+      "text": "Where are you spending time that doesn't match your priorities?"
+    },
+    {
+      "id": "goals-059",
+      "category": "goals",
+      "text": "What is the first step in a plan you've been dreaming about?"
+    },
+    {
+      "id": "goals-060",
+      "category": "goals",
+      "text": "What could you prepare tonight to make tomorrow easier?"
+    },
+    {
+      "id": "goals-061",
+      "category": "goals",
+      "text": "What is a mental or emotional goal you'd like to work on?"
+    },
+    {
+      "id": "goals-062",
+      "category": "goals",
+      "text": "What is one routine that would make your evenings calmer?"
+    },
+    {
+      "id": "goals-063",
+      "category": "goals",
+      "text": "What did you do today that you can be proud of?"
+    },
+    {
+      "id": "goals-064",
+      "category": "goals",
+      "text": "What would a five-minute version of a big goal look like?"
+    },
+    {
+      "id": "goals-065",
+      "category": "goals",
+      "text": "Who inspires you to aim higher, and what do they do?"
+    },
+    {
+      "id": "goals-066",
+      "category": "goals",
+      "text": "What is a career goal that feels meaningful to you?"
+    },
+    {
+      "id": "goals-067",
+      "category": "goals",
+      "text": "How will you know when you've reached your current goal?"
+    },
+    {
+      "id": "goals-068",
+      "category": "goals",
+      "text": "What is one thing you could automate or delegate?"
+    },
+    {
+      "id": "goals-069",
+      "category": "goals",
+      "text": "What is a challenge you'd like to take on this month?"
+    },
+    {
+      "id": "goals-070",
+      "category": "goals",
+      "text": "What would make your next week less rushed?"
+    },
+    {
+      "id": "goals-071",
+      "category": "goals",
+      "text": "What is one goal for your sleep or rest?"
+    },
+    {
+      "id": "goals-072",
+      "category": "goals",
+      "text": "What does your ideal day look like five years from now?"
+    },
+    {
+      "id": "goals-073",
+      "category": "goals",
+      "text": "What is a promise you want to keep to yourself this week?"
+    },
+    {
+      "id": "goals-074",
+      "category": "goals",
+      "text": "What could you learn from someone who has already reached your goal?"
+    },
+    {
+      "id": "goals-075",
+      "category": "goals",
+      "text": "What would you like to stop worrying about, and what step could help?"
+    },
+    {
+      "id": "goals-076",
+      "category": "goals",
+      "text": "What is a small risk worth taking this week?"
+    },
+    {
+      "id": "goals-077",
+      "category": "goals",
+      "text": "What tends to get in the way of your goals, and how could you work around it?"
+    },
+    {
+      "id": "goals-078",
+      "category": "goals",
+      "text": "What is something you'd like to try for the first time this year?"
+    },
+    {
+      "id": "goals-079",
+      "category": "goals",
+      "text": "What is the most important thing to protect time for this week?"
+    },
+    {
+      "id": "goals-080",
+      "category": "goals",
+      "text": "How could you make your goals kinder to yourself?"
+    },
+    {
+      "id": "goals-081",
+      "category": "goals",
+      "text": "What is a habit you'd like to replace, and with what?"
+    },
+    {
+      "id": "goals-082",
+      "category": "goals",
+      "text": "What is one connection you'd like to make or rekindle?"
+    },
+    {
+      "id": "goals-083",
+      "category": "goals",
+      "text": "What is a goal for how you treat yourself on hard days?"
+    },
+    {
+      "id": "goals-084",
+      "category": "goals",
+      "text": "What would you like your home to feel like, and what's one step toward it?"
+    },
+    {
+      "id": "goals-085",
+      "category": "goals",
+      "text": "What is a project you'd like to finish by next month?"
+    },
+    {
+      "id": "goals-086",
+      "category": "goals",
+      "text": "What is one question you want to answer for yourself this year?"
+    },
+    {
+      "id": "goals-087",
+      "category": "goals",
+      "text": "What is a goal you set long ago that you still care about?"
+    },
+    {
+      "id": "goals-088",
+      "category": "goals",
+      "text": "What would make you feel more confident in the next month?"
+    },
+    {
+      "id": "goals-089",
+      "category": "goals",
+      "text": "What is a reward that would genuinely motivate you?"
+    },
+    {
+      "id": "goals-090",
+      "category": "goals",
+      "text": "What did you do today that moved your life in a good direction?"
+    },
+    {
+      "id": "goals-091",
+      "category": "goals",
+      "text": "What is one goal that would improve your mornings?"
+    },
+    {
+      "id": "goals-092",
+      "category": "goals",
+      "text": "What is the smallest possible start you could make right now?"
+    },
+    {
+      "id": "creativity-001",
+      "category": "creativity",
+      "text": "Describe your day as if it were the opening of a novel."
+    },
+    {
+      "id": "creativity-002",
+      "category": "creativity",
+      "text": "If your mood today were weather, what would the forecast be?"
+    },
+    {
+      "id": "creativity-003",
+      "category": "creativity",
+      "text": "Write a letter to an object you use every day."
+    },
+    {
+      "id": "creativity-004",
+      "category": "creativity",
+      "text": "Invent a holiday and describe how people would celebrate it."
+    },
+    {
+      "id": "creativity-005",
+      "category": "creativity",
+      "text": "What would you name a color that matches your current mood?"
+    },
+    {
+      "id": "creativity-006",
+      "category": "creativity",
+      "text": "Describe a room from your childhood using all five senses."
+    },
+    {
+      "id": "creativity-007",
+      "category": "creativity",
+      "text": "If you could have dinner with any fictional character, who would it be and why?"
+    },
+    {
+      "id": "creativity-008",
+      "category": "creativity",
+      "text": "Write six words that sum up this week."
+    },
+    {
+      "id": "creativity-009",
+      "category": "creativity",
+      "text": "Imagine a door appeared in your wall. Where does it lead?"
+    },
+    {
+      "id": "creativity-010",
+      "category": "creativity",
+      "text": "What would your perfect bookstore or café look like?"
+    },
+    {
+      "id": "creativity-011",
+      "category": "creativity",
+      "text": "Describe today's sky to someone who has never seen it."
+    },
+    {
+      "id": "creativity-012",
+      "category": "creativity",
+      "text": "If you could master any instrument overnight, what would you play first?"
+    },
+    {
+      "id": "creativity-013",
+      "category": "creativity",
+      "text": "Write a short note to yourself ten years from now."
+    },
+    {
+      "id": "creativity-014",
+      "category": "creativity",
+      "text": "What would a museum exhibit about your life include?"
+    },
+    {
+      "id": "creativity-015",
+      "category": "creativity",
+      "text": "Invent a new word for a feeling that doesn't have a name."
+    },
+    {
+      "id": "creativity-016",
+      "category": "creativity",
+      "text": "If your life had a theme song, what would it sound like?"
+    },
+    {
+      "id": "creativity-017",
+      "category": "creativity",
+      "text": "Describe a stranger you saw recently and imagine their story."
+    },
+    {
+      "id": "creativity-018",
+      "category": "creativity",
+      "text": "What would you create with an unlimited budget for one day?"
+    },
+    {
+      "id": "creativity-019",
+      "category": "creativity",
+      "text": "Write a recipe for a perfect lazy Sunday."
+    },
+    {
+      "id": "creativity-020",
+      "category": "creativity",
+      "text": "If animals could talk, which one would you want to interview?"
+    },
+    {
+      "id": "creativity-021",
+      "category": "creativity",
+      "text": "Describe your ideal hideaway in as much detail as you can."
+    },
+    {
+      "id": "creativity-022",
+      "category": "creativity",
+      "text": "What would you put in a time capsule to open in 20 years?"
+    },
+    {
+      "id": "creativity-023",
+      "category": "creativity",
+      "text": "Imagine you're a tour guide for your own neighborhood. What's on the tour?"
+    },
+    {
+      "id": "creativity-024",
+      "category": "creativity",
+      "text": "Write a haiku about something you saw today."
+    },
+    {
+      "id": "creativity-025",
+      "category": "creativity",
+      "text": "If you could redesign one everyday object, what would you change?"
+    },
+    {
+      "id": "creativity-026",
+      "category": "creativity",
+      "text": "Describe a dream you remember, real or imagined."
+    },
+    {
+      "id": "creativity-027",
+      "category": "creativity",
+      "text": "What would your superpower be, and what would you use it for first?"
+    },
+    {
+      "id": "creativity-028",
+      "category": "creativity",
+      "text": "Write the first line of a story that begins in your kitchen."
+    },
+    {
+      "id": "creativity-029",
+      "category": "creativity",
+      "text": "If your favorite season were a person, what would they be like?"
+    },
+    {
+      "id": "creativity-030",
+      "category": "creativity",
+      "text": "Describe a meal you'd cook for someone you love."
+    },
+    {
+      "id": "creativity-031",
+      "category": "creativity",
+      "text": "What would a letter from your future self say?"
+    },
+    {
+      "id": "creativity-032",
+      "category": "creativity",
+      "text": "Invent a small ritual that would make your mornings magical."
+    },
+    {
+      "id": "creativity-033",
+      "category": "creativity",
+      "text": "If you could live inside any painting or photo, which would it be?"
+    },
+    {
+      "id": "creativity-034",
+      "category": "creativity",
+      "text": "Describe the sounds around you right now as if they were music."
+    },
+    {
+      "id": "creativity-035",
+      "category": "creativity",
+      "text": "What would you write on a billboard that everyone in your city would see?"
+    },
+    {
+      "id": "creativity-036",
+      "category": "creativity",
+      "text": "Imagine a perfect day with no obligations. Walk through it hour by hour."
+    },
+    {
+      "id": "creativity-037",
+      "category": "creativity",
+      "text": "If you opened a tiny shop, what would you sell?"
+    },
+    {
+      "id": "creativity-038",
+      "category": "creativity",
+      "text": "Write a thank-you note to a place that matters to you."
+    },
+    {
+      "id": "creativity-039",
+      "category": "creativity",
+      "text": "What would your personal coat of arms include?"
+    },
+    {
+      "id": "creativity-040",
+      "category": "creativity",
+      "text": "Describe a memory using only colors and textures."
+    },
+    {
+      "id": "creativity-041",
+      "category": "creativity",
+      "text": "If you could time-travel for one afternoon, where would you go?"
+    },
+    {
+      "id": "creativity-042",
+      "category": "creativity",
+      "text": "Write a short poem that starts with \"Today I noticed\"."
+    },
+    {
+      "id": "creativity-043",
+      "category": "creativity",
+      "text": "Invent a board game based on your daily life."
+    },
+    {
+      "id": "creativity-044",
+      "category": "creativity",
+      "text": "Describe your ideal garden, real or fantastical."
+    },
+    {
+      "id": "creativity-045",
+      "category": "creativity",
+      "text": "What would your autobiography be titled?"
+    },
+    {
+      "id": "creativity-046",
+      "category": "creativity",
+      "text": "If your pet or a houseplant kept a diary, what would today's entry say?"
+    },
+    {
+      "id": "creativity-047",
+      "category": "creativity",
+      "text": "Imagine a city built around your favorite hobby. What's it like?"
+    },
+    {
+      "id": "creativity-048",
+      "category": "creativity",
+      "text": "Write a conversation between your present self and your childhood self."
+    },
+    {
+      "id": "creativity-049",
+      "category": "creativity",
+      "text": "What would you invent to solve a small daily annoyance?"
+    },
+    {
+      "id": "creativity-050",
+      "category": "creativity",
+      "text": "Describe a smell that takes you somewhere else."
+    },
+    {
+      "id": "creativity-051",
+      "category": "creativity",
+      "text": "If you could add one room to your home, what would it be for?"
+    },
+    {
+      "id": "creativity-052",
+      "category": "creativity",
+      "text": "Write about a journey, real or imagined, in three sentences."
+    },
+    {
+      "id": "creativity-053",
+      "category": "creativity",
+      "text": "What would a playlist of your year so far include?"
+    },
+    {
+      "id": "creativity-054",
+      "category": "creativity",
+      "text": "Describe your hands and the things they've made or done."
+    },
+    {
+      "id": "creativity-055",
+      "category": "creativity",
+      "text": "If you ran a festival, what would it celebrate?"
+    },
+    {
+      "id": "creativity-056",
+      "category": "creativity",
+      "text": "Invent a creature that lives in your neighborhood."
+    },
+    {
+      "id": "creativity-057",
+      "category": "creativity",
+      "text": "Write a postcard from a place you've never been."
+    },
+    {
+      "id": "creativity-058",
+      "category": "creativity",
+      "text": "What would your perfect rainy day look like?"
+    },
+    {
+      "id": "creativity-059",
+      "category": "creativity",
+      "text": "Describe a favorite object as if it were a treasure in a legend."
+    },
+    {
+      "id": "creativity-060",
+      "category": "creativity",
+      "text": "If your thoughts today were a landscape, what would it look like?"
+    },
+    {
+      "id": "creativity-061",
+      "category": "creativity",
+      "text": "Write a list of ten things that are blue, beautiful, or both."
+    },
+    {
+      "id": "creativity-062",
+      "category": "creativity",
+      "text": "What would you say in a toast at a celebration of your friends?"
+    },
+    {
+      "id": "creativity-063",
+      "category": "creativity",
+      "text": "Imagine you woke up as a different age. What would you do first?"
+    },
+    {
+      "id": "creativity-064",
+      "category": "creativity",
+      "text": "Describe the view from a window you love."
+    },
+    {
+      "id": "creativity-065",
+      "category": "creativity",
+      "text": "If you could make one rule for the whole world for a day, what would it be?"
+    },
+    {
+      "id": "creativity-066",
+      "category": "creativity",
+      "text": "Write a fable with a lesson you learned recently."
+    },
+    {
+      "id": "creativity-067",
+      "category": "creativity",
+      "text": "What kind of house would you build in the middle of nowhere?"
+    },
+    {
+      "id": "creativity-068",
+      "category": "creativity",
+      "text": "Describe a sound you love and why it feels good."
+    },
+    {
+      "id": "creativity-069",
+      "category": "creativity",
+      "text": "If your week were a movie genre, which would it be and why?"
+    },
+    {
+      "id": "creativity-070",
+      "category": "creativity",
+      "text": "Invent a dessert and describe how it tastes."
+    },
+    {
+      "id": "creativity-071",
+      "category": "creativity",
+      "text": "Write a letter to someone you'll never meet."
+    },
+    {
+      "id": "creativity-072",
+      "category": "creativity",
+      "text": "What would you paint if you had a giant blank wall?"
+    },
+    {
+      "id": "creativity-073",
+      "category": "creativity",
+      "text": "Describe a walk you took, or would like to take, step by step."
+    },
+    {
+      "id": "creativity-074",
+      "category": "creativity",
+      "text": "If you could swap lives with someone for a day, who would it be?"
+    },
+    {
+      "id": "creativity-075",
+      "category": "creativity",
+      "text": "Write about an ordinary moment as if it were extraordinary."
+    },
+    {
+      "id": "creativity-076",
+      "category": "creativity",
+      "text": "What would a map of your inner world look like?"
+    },
+    {
+      "id": "creativity-077",
+      "category": "creativity",
+      "text": "Imagine your favorite book had a sequel. What happens?"
+    },
+    {
+      "id": "creativity-078",
+      "category": "creativity",
+      "text": "Describe the perfect cup of tea or coffee in detail."
+    },
+    {
+      "id": "creativity-079",
+      "category": "creativity",
+      "text": "If you started a collection today, what would you collect?"
+    },
+    {
+      "id": "creativity-080",
+      "category": "creativity",
+      "text": "Write five questions you'd ask an astronaut, a chef, or a poet."
+    },
+    {
+      "id": "creativity-081",
+      "category": "creativity",
+      "text": "What would your dream workspace look like?"
+    },
+    {
+      "id": "creativity-082",
+      "category": "creativity",
+      "text": "Describe a character who is the opposite of you."
+    },
+    {
+      "id": "creativity-083",
+      "category": "creativity",
+      "text": "If today had a mascot, what would it be?"
+    },
+    {
+      "id": "creativity-084",
+      "category": "creativity",
+      "text": "Invent a constellation and tell its story."
+    },
+    {
+      "id": "creativity-085",
+      "category": "creativity",
+      "text": "Write about the first thing you saw this morning in detail."
+    },
+    {
+      "id": "creativity-086",
+      "category": "creativity",
+      "text": "What would you build with a giant box of building blocks?"
+    },
+    {
+      "id": "creativity-087",
+      "category": "creativity",
+      "text": "Describe a festival of lights in a city you imagine."
+    },
+    {
+      "id": "creativity-088",
+      "category": "creativity",
+      "text": "If you could bottle a feeling, which one would you choose?"
+    },
+    {
+      "id": "creativity-089",
+      "category": "creativity",
+      "text": "Write a short scene that takes place on a train."
+    },
+    {
+      "id": "creativity-090",
+      "category": "creativity",
+      "text": "What would a love letter to your hometown say?"
+    },
+    {
+      "id": "creativity-091",
+      "category": "creativity",
+      "text": "Imagine your shadow went on its own adventure today. Where did it go?"
+    },
+    {
+      "id": "creativity-092",
+      "category": "creativity",
+      "text": "Write a story in exactly fifty words about something you noticed today."
+    }
+  ]
+}
