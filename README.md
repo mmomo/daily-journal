@@ -4,6 +4,23 @@ An iOS 17+ app that gives you one journaling prompt a day, a quick text entry, a
 
 Planning and design documents live in [`aidlc-docs/`](aidlc-docs/).
 
+## Screenshots
+
+<table>
+  <tr>
+    <td align="center"><img src="docs/screenshots/today.png" width="200" alt="Today screen with streak, prompt and empty editor"><br><sub><b>Today's prompt</b></sub></td>
+    <td align="center"><img src="docs/screenshots/writing.png" width="200" alt="Writing an entry with the keyboard up, autosave status and word count"><br><sub><b>Quick entry with autosave</b></sub></td>
+    <td align="center"><img src="docs/screenshots/saved.png" width="200" alt="Saved entry with the streak marked as done"><br><sub><b>Done for today</b></sub></td>
+    <td align="center"><img src="docs/screenshots/dark.png" width="200" alt="Today screen in dark mode"><br><sub><b>Dark mode</b></sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/screenshots/history.png" width="200" alt="History list with search"><br><sub><b>History and search</b></sub></td>
+    <td align="center"><img src="docs/screenshots/settings.png" width="200" alt="Settings with prompt categories, reminder and export"><br><sub><b>Settings</b></sub></td>
+    <td align="center"><img src="docs/screenshots/onboarding.png" width="200" alt="First-launch onboarding with category toggles"><br><sub><b>Onboarding</b></sub></td>
+    <td></td>
+  </tr>
+</table>
+
 ## Layout
 
 | Path | Contents |
