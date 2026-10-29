@@ -9,13 +9,16 @@ struct PromptCard: View {
     let onRefresh: () -> Void
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
+        VStack(alignment: .leading, spacing: 14) {
             Label(prompt.category.title, systemImage: prompt.category.symbol)
                 .font(.caption.weight(.semibold))
                 .textCase(.uppercase)
                 .foregroundStyle(.tint)
+                .padding(.horizontal, 10)
+                .padding(.vertical, 5)
+                .background(.tint.opacity(0.12), in: Capsule())
             Text(prompt.text)
-                .font(.title3.weight(.semibold))
+                .font(.system(.title2, design: .serif, weight: .semibold))
                 .fixedSize(horizontal: false, vertical: true)
                 .accessibilityIdentifier("today-prompt-text")
             if showsRefresh {
@@ -24,15 +27,16 @@ struct PromptCard: View {
                         refreshesRemaining > 0 ? "New prompt · \(refreshesRemaining) left" : "No refreshes left today",
                         systemImage: "arrow.triangle.2.circlepath"
                     )
-                    .font(.subheadline)
+                    .font(.footnote.weight(.medium))
                 }
+                .buttonStyle(.bordered)
+                .buttonBorderShape(.capsule)
+                .controlSize(.small)
                 .disabled(refreshesRemaining == 0)
                 .accessibilityIdentifier("today-refresh-button")
             }
         }
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .padding()
-        .background(.background.secondary, in: RoundedRectangle(cornerRadius: 14))
+        .card(padding: 20)
     }
 }
 
@@ -44,4 +48,5 @@ struct PromptCard: View {
         onRefresh: {}
     )
     .padding()
+    .background(Color(.systemGroupedBackground))
 }

@@ -14,12 +14,20 @@ struct HistoryView: View {
     var body: some View {
         List(entries) { entry in
             NavigationLink(value: Route.entry(entry.day)) {
-                VStack(alignment: .leading, spacing: 4) {
-                    Text(entry.day.shortTitle).font(.headline)
-                    Text(entry.promptText).font(.subheadline).foregroundStyle(.secondary).lineLimit(1)
-                    Text(entry.text).font(.body).lineLimit(2)
+                VStack(alignment: .leading, spacing: 6) {
+                    Text(entry.day.shortTitle)
+                        .font(.caption.weight(.semibold))
+                        .textCase(.uppercase)
+                        .foregroundStyle(.tint)
+                    Text(entry.promptText)
+                        .font(.system(.headline, design: .serif))
+                        .lineLimit(1)
+                    Text(entry.text)
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                        .lineLimit(2)
                 }
-                .padding(.vertical, 4)
+                .padding(.vertical, 6)
             }
         }
         .accessibilityIdentifier("history-list")
@@ -74,7 +82,7 @@ struct EntryDetailView: View {
                 VStack(alignment: .leading, spacing: 16) {
                     if let detail {
                         Text(detail.entry.promptText)
-                            .font(.title3.weight(.semibold))
+                            .font(.system(.title2, design: .serif, weight: .semibold))
                         if detail.editability.isEditable {
                             EntryEditorView(
                                 mode: .today(day),
@@ -86,8 +94,9 @@ struct EntryDetailView: View {
                             .id(day)
                         } else {
                             Text(detail.entry.text)
-                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .lineSpacing(4)
                                 .textSelection(.enabled)
+                                .card(padding: 20)
                             Label("Past entries are read-only.", systemImage: "lock")
                                 .font(.footnote)
                                 .foregroundStyle(.secondary)
@@ -100,6 +109,7 @@ struct EntryDetailView: View {
                 }
                 .padding()
             }
+            .background(Color(.systemGroupedBackground))
             .scrollDismissesKeyboard(.interactively)
         }
         .navigationTitle(day.shortTitle)

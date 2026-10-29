@@ -68,3 +68,4 @@
 - 2026-10-28: Bug fix (App unit) - keyboard dismissed after first autosave; History entry tap pushed list twice. Fixed in TodayView.swift and HistoryView.swift. Build succeeded.
 - 2026-10-28: Bug fix (App unit) - long entries hidden behind keyboard and Done unreachable. Fixed in EntryEditorView.swift, TodayView.swift, HistoryView.swift. Build succeeded.
 - 2026-10-28: Verified the fixes in iOS 26.2 simulators (iPhone 17 Pro, iPhone SE); removed the keyboard toolbar Done button because it did not render.
+- 2026-10-28: UI polish (App unit) - shared primary button and card styles, restyled Today, editor, streak, prompt, history, onboarding. Verified in simulator.

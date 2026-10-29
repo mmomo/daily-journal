@@ -23,7 +23,7 @@ struct TodayView: View {
     var body: some View {
         ScrollViewReader { proxy in
             ScrollView {
-                VStack(alignment: .leading, spacing: 20) {
+                VStack(alignment: .leading, spacing: 16) {
                     if let state {
                         content(for: state, scrollProxy: proxy)
                     } else {
@@ -36,6 +36,7 @@ struct TodayView: View {
                 .padding()
             }
         }
+        .background(Color(.systemGroupedBackground))
         .scrollDismissesKeyboard(.interactively)
         .navigationTitle(state?.day.longTitle ?? "Today")
         .navigationBarTitleDisplayMode(.inline)
@@ -80,18 +81,31 @@ struct TodayView: View {
     @ViewBuilder
     private func content(for state: TodayState, scrollProxy: ScrollViewProxy) -> some View {
         StreakView(streak: state.streak)
+            .id(Self.topAnchor)
 
         if let offer = state.backfillOffer {
             Button {
                 showingBackfill = true
             } label: {
-                Label(
-                    "Write yesterday's entry · until \(offer.until.formatted(date: .omitted, time: .shortened))",
-                    systemImage: "clock.arrow.circlepath"
-                )
-                .frame(maxWidth: .infinity, alignment: .leading)
+                HStack(spacing: 12) {
+                    Image(systemName: "clock.arrow.circlepath")
+                        .font(.title3)
+                        .foregroundStyle(.tint)
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("Write yesterday's entry")
+                            .font(.subheadline.weight(.semibold))
+                        Text("Available until \(offer.until.formatted(date: .omitted, time: .shortened))")
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                    }
+                    Spacer()
+                    Image(systemName: "chevron.right")
+                        .font(.footnote.weight(.semibold))
+                        .foregroundStyle(.tertiary)
+                }
+                .card()
             }
-            .buttonStyle(.bordered)
+            .buttonStyle(.plain)
             .accessibilityIdentifier("today-backfill-button")
         }
 
@@ -115,29 +129,46 @@ struct TodayView: View {
                     isEditing = true
                     Task { await load() }
                 },
-                onFinished: { isEditing = false },
+                onFinished: {
+                    isEditing = false
+                    // Bring the updated streak and the saved entry back into view.
+                    withAnimation { scrollProxy.scrollTo(Self.topAnchor, anchor: .top) }
+                },
                 onEditingActivity: { scrollProxy.scrollTo(state.day, anchor: .bottom) }
             )
             .id(state.day)
         }
     }
 
+    private static let topAnchor = "today-top"
+
     private func savedEntry(_ entry: JournalEntry, editable: Bool) -> some View {
-        VStack(alignment: .leading, spacing: 12) {
+        VStack(alignment: .leading, spacing: 14) {
+            Label("Today's entry", systemImage: "checkmark.seal.fill")
+                .font(.caption.weight(.semibold))
+                .textCase(.uppercase)
+                .foregroundStyle(.green)
             Text(entry.text)
+                .lineSpacing(4)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .textSelection(.enabled)
             if editable {
-                Button("Edit") { isEditing = true }
-                    .accessibilityIdentifier("today-edit-button")
+                Button {
+                    isEditing = true
+                } label: {
+                    Label("Edit", systemImage: "pencil")
+                        .font(.subheadline.weight(.medium))
+                }
+                .buttonStyle(.bordered)
+                .buttonBorderShape(.capsule)
+                .accessibilityIdentifier("today-edit-button")
             } else {
                 Label("This entry is locked.", systemImage: "lock")
                     .font(.footnote)
                     .foregroundStyle(.secondary)
             }
         }
-        .padding()
-        .background(.background.secondary, in: RoundedRectangle(cornerRadius: 14))
+        .card(padding: 20)
     }
 
     private func load() async {
@@ -183,11 +214,12 @@ private struct BackfillSheet: View {
         NavigationStack {
             VStack(alignment: .leading, spacing: 16) {
                 Text(offer.prompt.text)
-                    .font(.title3.weight(.semibold))
+                    .font(.system(.title3, design: .serif, weight: .semibold))
                 EntryEditorView(mode: .backfill(offer.day), useCases: useCases, autoFocus: true, onFinished: onDone)
                 Spacer()
             }
             .padding()
+            .background(Color(.systemGroupedBackground))
             .navigationTitle(offer.day.longTitle)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {

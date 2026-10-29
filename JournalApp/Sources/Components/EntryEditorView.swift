@@ -22,6 +22,7 @@ struct EntryEditorView: View {
     @State private var isLocked = false
     @State private var autosaveTask: Task<Void, Never>?
     @State private var inFlight: Task<Bool, Never>?
+    @State private var finishCount = 0
     @FocusState private var focused: Bool
 
     init(
@@ -45,37 +46,36 @@ struct EntryEditorView: View {
     }
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            ZStack(alignment: .topLeading) {
-                if text.isEmpty {
-                    Text("Start writing…")
-                        .foregroundStyle(.tertiary)
-                        .padding(.horizontal, 5)
-                        .padding(.vertical, 8)
+        VStack(alignment: .leading, spacing: 12) {
+            VStack(alignment: .leading, spacing: 4) {
+                ZStack(alignment: .topLeading) {
+                    if text.isEmpty {
+                        Text("Start writing…")
+                            .foregroundStyle(.tertiary)
+                            .padding(.horizontal, 5)
+                            .padding(.vertical, 8)
+                    }
+                    TextEditor(text: $text)
+                        .focused($focused)
+                        .lineSpacing(4)
+                        .scrollContentBackground(.hidden)
+                        .disabled(isLocked)
+                        .accessibilityIdentifier("editor-text-field")
                 }
-                TextEditor(text: $text)
-                    .focused($focused)
-                    .scrollContentBackground(.hidden)
-                    .disabled(isLocked)
-                    .accessibilityIdentifier("editor-text-field")
-            }
-            // Capped so long text scrolls inside the editor, keeping the caret and the button row on screen.
-            .frame(minHeight: 180, maxHeight: 320)
-            .padding(8)
-            .background(.background.secondary, in: RoundedRectangle(cornerRadius: 14))
+                // Capped so long text scrolls inside the editor, keeping the caret and the button on screen.
+                .frame(minHeight: 180, maxHeight: 300)
 
-            HStack {
-                if let status {
-                    Text(status)
-                        .font(.footnote)
-                        .foregroundStyle(isLocked ? Color.red : Color.secondary)
-                }
-                Spacer()
-                Button(finishTitle, action: finish)
-                    .buttonStyle(.borderedProminent)
-                    .disabled(!canFinish)
-                    .accessibilityIdentifier("editor-done-button")
+                statusLine
             }
+            .card(padding: 12)
+
+            Button(action: finish) {
+                Label(finishTitle, systemImage: "checkmark")
+            }
+            .buttonStyle(.primary)
+            .disabled(!canFinish)
+            .sensoryFeedback(.success, trigger: finishCount)
+            .accessibilityIdentifier("editor-done-button")
         }
         .onAppear {
             if autoFocus { focused = true }
@@ -97,6 +97,28 @@ struct EntryEditorView: View {
         }
     }
 
+    private var statusLine: some View {
+        HStack(spacing: 4) {
+            if let status {
+                Image(systemName: isLocked ? "exclamationmark.circle.fill" : "checkmark.circle.fill")
+                Text(status)
+            }
+            Spacer()
+            if !text.isEmpty {
+                Text(wordCount == 1 ? "1 word" : "\(wordCount) words")
+                    .monospacedDigit()
+            }
+        }
+        .font(.caption)
+        .foregroundStyle(isLocked ? Color.red : Color.secondary)
+        .padding(.horizontal, 5)
+        .frame(minHeight: 16)
+    }
+
+    private var wordCount: Int {
+        text.split(whereSeparator: { $0.isWhitespace || $0.isNewline }).count
+    }
+
     private var finishTitle: String { isBackfill ? "Save" : "Done" }
 
     private var canFinish: Bool { !isLocked && JournalEntry.isValidText(text) }
@@ -105,6 +127,7 @@ struct EntryEditorView: View {
         autosaveTask?.cancel()
         Task {
             if await save() {
+                finishCount += 1
                 focused = false
                 onFinished()
             }

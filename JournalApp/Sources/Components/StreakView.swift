@@ -6,22 +6,43 @@ struct StreakView: View {
     let streak: StreakSummary
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 6) {
-            HStack(alignment: .firstTextBaseline) {
+        VStack(alignment: .leading, spacing: 12) {
+            HStack(spacing: 14) {
                 Image(systemName: "flame.fill")
+                    .font(.title2)
                     .foregroundStyle(streak.current > 0 ? Color.orange : Color.secondary)
-                Text(title)
-                    .font(.headline)
-                    .accessibilityIdentifier("streak-label")
-                if streak.isTodayDone {
-                    Image(systemName: "checkmark.circle.fill")
-                        .foregroundStyle(.green)
-                        .accessibilityLabel("Today is done")
+                    .frame(width: 48, height: 48)
+                    .background(
+                        (streak.current > 0 ? Color.orange : Color.secondary).opacity(0.15),
+                        in: Circle()
+                    )
+                VStack(alignment: .leading, spacing: 2) {
+                    if streak.current > 0 {
+                        Text("\(streak.current)")
+                            .font(.system(.title, design: .rounded, weight: .bold))
+                            .contentTransition(.numericText())
+                    }
+                    Text(title)
+                        .font(streak.current > 0 ? .subheadline : .headline)
+                        .foregroundStyle(streak.current > 0 ? .secondary : .primary)
+                        .accessibilityIdentifier("streak-label")
                 }
+                .accessibilityElement(children: .combine)
                 Spacer()
-                Text("Best \(streak.best)")
-                    .font(.subheadline)
-                    .foregroundStyle(.secondary)
+                VStack(alignment: .trailing, spacing: 6) {
+                    if streak.isTodayDone {
+                        Label("Done", systemImage: "checkmark.circle.fill")
+                            .font(.caption.weight(.semibold))
+                            .foregroundStyle(.green)
+                            .accessibilityLabel("Today is done")
+                    }
+                    Text("Best \(streak.best)")
+                        .font(.caption.weight(.medium))
+                        .foregroundStyle(.secondary)
+                        .padding(.horizontal, 10)
+                        .padding(.vertical, 4)
+                        .background(Color(.tertiarySystemFill), in: Capsule())
+                }
             }
             if let caption = atRiskCaption {
                 Label(caption, systemImage: "exclamationmark.triangle.fill")
@@ -29,15 +50,14 @@ struct StreakView: View {
                     .foregroundStyle(.orange)
             }
         }
-        .padding()
-        .background(.orange.opacity(0.08), in: RoundedRectangle(cornerRadius: 14))
+        .card()
     }
 
     private var title: String {
         switch streak.current {
         case 0: "Start your streak today"
-        case 1: "1 day streak"
-        default: "\(streak.current) day streak"
+        case 1: "day streak"
+        default: "days in a row"
         }
     }
 
@@ -53,6 +73,8 @@ struct StreakView: View {
     VStack {
         StreakView(streak: StreakSummary(current: 5, best: 12, status: .active, isTodayDone: true))
         StreakView(streak: StreakSummary(current: 3, best: 3, status: .atRisk(restorableCount: 3, until: .now), isTodayDone: false))
+        StreakView(streak: .empty)
     }
     .padding()
+    .background(Color(.systemGroupedBackground))
 }

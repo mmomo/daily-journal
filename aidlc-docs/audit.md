@@ -328,3 +328,10 @@
 **Context**: Post-completion bug fix verification - App unit
 
 ---
+## UI Polish Request
+**Timestamp**: 2026-10-29T01:45:10Z
+**User Input**: "Polish the UI, keep things simple with swiftui, but make some changes for example to main button"
+**AI Response**: "Minimal-depth UI change within App unit (no new business rules). Added Components/DesignSystem.swift (PrimaryButtonStyle: full-width 52pt accent button with press animation; card() modifier on grouped background). Editor: card with Saved status and word count, full-width primary Done/Save with success haptic. StreakView: large rounded count in flame badge, Done and Best pills. PromptCard: category chip, serif prompt, capsule refresh button. TodayView: grouped background, backfill row as card, saved entry card with Edit capsule, scroll to top after Done. History rows and entry detail restyled; onboarding uses primary buttons with Back below. Regenerated Tuist project; BUILD SUCCEEDED, 0 warnings. Verified in iOS 26.2 simulator (iPhone 17 Pro), light and dark mode; UI drive passed (onboarding, typing, Done, History, detail, Back navigation)."
+**Context**: Post-completion UI polish - App unit
+
+---

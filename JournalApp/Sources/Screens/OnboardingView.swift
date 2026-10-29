@@ -64,21 +64,19 @@ struct OnboardingView: View {
     }
 
     private var footer: some View {
-        HStack {
-            if step == 1 {
-                Button("Back") { step = 0 }
-            }
-            Spacer()
+        VStack(spacing: 12) {
             if step == 0 {
                 Button("Next") { step = 1 }
-                    .buttonStyle(.borderedProminent)
+                    .buttonStyle(.primary)
                     .disabled(categories.isEmpty)
                     .accessibilityIdentifier("onboarding-next-button")
             } else {
                 Button(reminderOn ? "Start journaling" : "Not now, start journaling") { finish() }
-                    .buttonStyle(.borderedProminent)
+                    .buttonStyle(.primary)
                     .disabled(isFinishing)
                     .accessibilityIdentifier("onboarding-finish-button")
+                Button("Back") { step = 0 }
+                    .font(.subheadline.weight(.medium))
             }
         }
     }
